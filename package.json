@@ -1,0 +1,33 @@
+{
+  "name": "cluster-try-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/benchmark.js",
+    "withCluster": "node src/withCluster.js",
+    "noCluster": "node src/noCluster.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.0",
+    "@socket.io/sticky": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "farmhash": "^3.2.2",
+    "http": "^0.0.1-security",
+    "loadtest": "^5.1.2",
+    "path": "^0.12.7",
+    "redis-server": "^1.2.2",
+    "siege": "^0.2.0",
+    "socket.io": "^4.5.1",
+    "socket.io-redis": "^6.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
